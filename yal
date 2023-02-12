@@ -24,14 +24,14 @@ probability_model = tf.keras.Sequential([
   model,
   tf.keras.layers.Softmax()
 ])
-Var0 = probability_model(x_test[1:2])
+Var1 = probability_model(x_test[1:2])
 print(Var1)
 
-Var12 = probability_model(x_test[48:49])
-print(Var48)
+Var18 = probability_model(x_test[18:19])
+print(Var18)
 
-Var146 = probability_model(x_test[144:145])
-print(Var144)
+Var186 = probability_model(x_test[186:187])
+print(Var186)
 
 
 from matplotlib import pyplot as plt
@@ -43,6 +43,6 @@ def gen_image(arr):
     return plt
 
 gen_image(x_test[1]).show()
-gen_image(x_test[48]).show()
-gen_image(x_test[144]).show()
+gen_image(x_test[18]).show()
+gen_image(x_test[186]).show()
 
